@@ -1,9 +1,9 @@
-FROM ubuntu:16.04
+FROM ioft/i386-ubuntu:xenial
 MAINTAINER sparklyballs
 
 # set version for s6 overlay
 ARG OVERLAY_VERSION="v1.19.1.1"
-ARG OVERLAY_ARCH="amd64"
+ARG OVERLAY_ARCH="x86"
 
 # set environment variables
 ARG DEBIAN_FRONTEND="noninteractive"
